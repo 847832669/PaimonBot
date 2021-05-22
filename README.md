@@ -9,6 +9,9 @@
 尽量在linux下运行，windows下可能会有各种报错。  
 
 ### 更新记录  
+2021-5-22 更新1.5下版本材料（替换src/data文件夹即可）  
+2021-5-2 更新1.5版本周本材料  
+2021-4-29 修复米游社资料查询失败  
 2021-4-9 修复CD bug ,增加防闪照，新撤回涩图机制用法 回复Bot:撤回@发涩图指令的人  
 2021-4-7 更新武器资料,修复windows下路径bug  
 2021-4-6 修复Bug,增加涩图cd功能,默认60秒，在.env文件设置时间，超级用户不受影响  
@@ -29,12 +32,15 @@ pip3 install -r requirements.txt
 ```  
 3.在.env和.env.dev文件中设置所需的cookie和SUPERUSERS(超级用户)  
 
-4.运行Bot.py  
+4.配置go-cqhttp 详细请观看[go-cqhttp官方文档](https://docs.go-cqhttp.org/)和[nonebot2官方文档](https://v2.nonebot.dev/)   
+注意！！PaimonBot连接端口为9898  
+注意！！PaimonBot连接端口为9898  
+注意！！PaimonBot连接端口为9898  
+
+5.运行Bot.py  
 ```shell
 python3 bot.py
 ```
-5.~~在config.hjson文件中设置Bot的QQ账号密码~~  
-go-cqhttp更新，不需要填账号密码，直接右键打开.exe文件（windows下，其他系统请在[go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/tag/v1.0.0-beta2) 下载），扫码登录  
 
 6.搭建成功，发送help获取菜单  
 <img src="https://github.com/XiaoMiku01/PaimonBot/blob/main/doc/help.png" width="250px" />  
